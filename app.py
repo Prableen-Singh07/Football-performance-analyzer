@@ -13,7 +13,7 @@ sns.set_theme(style="whitegrid")
 # ==========================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data set/footballdata.csv")
+    df = pd.read_csv("footballdata.csv")
     for col in ["Teams", "Seasons", "Players"]:
         df[col] = df[col].astype(str).str.strip()
         
